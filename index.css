@@ -4,7 +4,8 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-    background-color: rgb(251, 194, 210);
+    background-color: #fbc1d1;
+    user-select: none;
 }
 
 .container {
@@ -42,6 +43,11 @@ button {
     text-align: center;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(99, 0, 0);
+}
+
 ul {
    list-style-type: none;
    padding: 0;
@@ -59,3 +65,16 @@ li {
     text-align: center;
     font-size: 20px;
 }
+
+li:hover {
+    cursor: pointer;
+    background-color: rgb(255, 145, 105);
+    color: #ffffff;
+}
+
+.empty-message {
+  text-align: center;
+  margin: auto;
+  color: #525252;
+  }
+  

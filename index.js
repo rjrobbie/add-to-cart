@@ -27,17 +27,23 @@ addButton.addEventListener("click", () => {
 });
 
 onValue(shoppingList, function(snapshot) {
-    let itemsArray = Object.entries(snapshot.val());
-    
-    clearShoppingList();
-    
-    for (let i = 0; i < itemsArray.length; i++) {
-        let currentItem = itemsArray[i];
-        let currentItemID = currentItem[0];
-        let currentItemValue = currentItem[1];
 
-        addNewItem(currentItemID, currentItemValue);
+    if (snapshot.exists()) {
+        let itemsArray = Object.entries(snapshot.val());
+    
+        clearShoppingList();
+        
+        for (let i = 0; i < itemsArray.length; i++) {
+            let currentItem = itemsArray[i];
+            let currentItemID = currentItem[0];
+            let currentItemValue = currentItem[1];
+    
+            addNewItem(currentItemID, currentItemValue);
+        }
+    } else {
+        shoppingListEl.innerHTML = "<span class='empty-message'>Your shopping list is empty</span>";
     }
+  
 });
 
 const clearShoppingList = () => {
