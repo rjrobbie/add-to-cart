@@ -4,7 +4,7 @@ This app allows users to add and remove items from shopping list while appearing
 
 ## Screenshots
 
-![Mobile view](https://user-images.githubusercontent.com/47794235/232319922-236ba167-61c4-404c-b36b-f9f289a23e95.png)
+![App Screenshot](https://user-images.githubusercontent.com/47794235/232319922-236ba167-61c4-404c-b36b-f9f289a23e95.png)
 
 ## Live site
 
